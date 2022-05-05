@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego: Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <main class="container">
+        <div class="container__item">
+            <h1>¡Piedra, Papel o Tijera!</h1>
+            <p class="container__item__first">¡Bienvenido al Juego de Piedra, Papel o Tijera!</p>
+            <p class="container__item__second">Porfavor selecciona la opción escogida para el Jugador 1 y el Jugador 2:</p>
+            <div class="game__container">
+                <div class="form__container">
+                    <form class="form">
+                        <h3>Jugador 1</h3>
+                        <label for="jugadorUnoPiedra">
+                            <span class="form__item1">Piedra</span>
+                            <input type="radio" id="jugadorUnoPiedra" value="jugadorUnoPiedra" name="jugadorUnoPiedra">
+                        </label>
+                        <label for="jugadorUnoPapel">
+                            <span class="form__item2">Papel</span>
+                            <input type="radio" value="jugadorUnoPapel" name="jugadorUnoPapel" id="jugadorUnoPapel">
+                        </label>
+                        <label for="jugadorUnoTijera">
+                            <span class="form__item3">Tijera </span>
+                            <input type="radio" value="jugadorUnoTijera" name="jugadorUnoTijera" id="jugadorUnoTijera">
+                        </label>
+                    </form>
+                     <form class="form2">
+                        <h3>Jugador 2</h3>
+                         <label for="jugadorDosPiedra">
+                            <span class="form__item1">Piedra</span>
+                            <input type="radio" id="jugadorDosPiedra" value="jugadorDosPiedra" name="jugadorDosPiedra">
+                        </label>
+                        <label for="jugadoDosPapel">
+                            <span class="form__item2">Papel</span>
+                            <input type="radio" value="jugadorDosPapel" name="jugadorDosPapel" id="jugadorDosPapel">
+                        </label>
+                        <label for="jugadorDosTijera">
+                            <span class="form__item3">Tijera </span>
+                            <input type="radio" value="jugadorDosTijera" name="jugadorDosTijera" id="jugadorDosTijera">
+                        </label>
+                     </form>
+                </div>
+                <button id="boton" onclick="eleccion()">Jugar</button>
+                <div class="resultado">
+                    <p id="print"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>|
